@@ -1,274 +1,181 @@
-# From Predictive to Generative AI: Workshop Materials
+# From Predictive to Generative AI: A Hands-On Journey Through the AI Revolution
 
-## 🎯 Workshop Overview
+## Workshop Overview
 
-This 60-minute workshop demonstrates the paradigm shift from traditional Predictive AI to modern Generative AI through hands-on coding and practical examples.
+A hands-on workshop demonstrating the paradigm shift from traditional Predictive AI to modern Generative AI through live coding, prompt engineering, and multilingual AI experiences.
 
-**Target Audience**: Beginner to Advanced(mixed coding experience)  
-**Duration**: 60 minutes  
-**Platform**: Google Colab and Visual Studio Code  
+**Presented at:**
+- **UbuCon Africa 2026** (1 hr 45 min) - Expanded version with Kiswahili AI, Beamer presentation, and 3 notebooks
+- **Hackfest Machakos 2025** (60 min) - Original compact version with 2 notebooks
 
+**Technical Level**: Intermediate (mixed coding experience welcome)
+**Platform**: Google Colab, VS Code, or local Jupyter
 
-## 📁 File Structure
+## File Structure
 
 ```
-Hackfest-Machakos/
-├── 01_Predictive_AI_Titanic_Classification.ipynb    # Traditional ML demo
-├── 02_Generative_AI_Working_Demo.ipynb              # Generative AI demo with chat
-├── Workshop_Presenter_Notes.md                      # Detailed presenter guide
+.
+├── UbuCon-2026/                                      # UbuCon Africa 2026 materials
+│   ├── 01_Predictive_AI_Titanic.ipynb                #   Traditional ML pipeline
+│   ├── 02_Generative_AI_Demo.ipynb                   #   Generative AI with Ollama & Gemini
+│   ├── 03_Generative_AI_Kiswahili.ipynb              #   AI in Kiswahili language
+│   ├── presentation.tex                              #   Beamer slides (22 slides)
+│   ├── presentation.pdf                              #   Compiled presentation
+│   └── .gitignore                                    #   LaTeX auxiliary exclusions
+├── Workshop_Presenter_Notes.md                       # Presenter guide (105-min & 60-min formats)
 ├── requirements.txt                                  # Python dependencies
 └── README.md                                         # This file
 ```
 
-## 📚 Workshop Materials
+## UbuCon 2026 Workshop (1 hr 45 min)
 
-### 1. Core Notebooks
-- **`01_Predictive_AI_Titanic_Classification.ipynb`**: Traditional ML pipeline using Logistic Regression
-- **`02_Generative_AI_Working_Demo.ipynb`**: Generative AI with Gemini/Ollama + interactive chat
+### What's New
+- **3 notebooks** instead of 2 — added Kiswahili AI notebook
+- **Beamer presentation** (22 slides) for structured delivery
+- **Ollama-first approach** — local AI as primary, Gemini as secondary
+- **Multilingual AI** — full Kiswahili language experience
+- **Extended hands-on time** — 45 minutes of participant experimentation
 
-### 2. Presenter Resources
-- **`Workshop_Presenter_Notes.md`**: Detailed 60-minute timeline with talking points and engagement strategies
-- **`requirements.txt`**: All required Python packages
+### Timeline
 
-## 🚀 Quick Start Guide
+| Phase | Time | Content | Notebook |
+|-------|------|---------|----------|
+| Opening & Presentation | 0-15 min | AI landscape, key concepts | `presentation.pdf` |
+| Live Demo 1: Predictive AI | 15-35 min | Titanic ML pipeline, limitations | `01_Predictive_AI_Titanic.ipynb` |
+| Live Demo 2: Generative AI | 35-65 min | Prompt engineering, Ollama vs Gemini, AI Showdown | `02_Generative_AI_Demo.ipynb` |
+| Live Demo 3: Kiswahili AI | 65-80 min | AI in African languages | `03_Generative_AI_Kiswahili.ipynb` |
+| Hands-On & Closing | 80-105 min | Participant experimentation, Q&A | All notebooks |
 
-### For Presenters:
-1. Review the presenter notes thoroughly
-2. Test both notebooks in Google Colab
-3. Obtain a free Gemini API key from [Google AI Studio](https://makersuite.google.com/)
-4. Practice the key analogies and transitions
+### Notebooks
 
-### For Participants:
-1. Open Google Colab in your browser
-2. Upload the notebook files or access via shared links
-3. Follow along with the live demonstration
-4. Experiment with prompt modifications
+**01 - Predictive AI (Titanic Classification)**
+- Load and explore Titanic dataset with 3-panel visualization
+- Data cleaning and feature engineering
+- Logistic Regression training with train/test split
+- Feature importance + confusion matrix analysis
+- New passenger predictions
+- Critical framing: model can ONLY output 0 or 1
 
-## 🎓 Learning Objectives
+**02 - Generative AI Demo**
+- Prompt engineering fundamentals (anatomy of a good prompt)
+- Ollama local AI setup and interaction
+- Gemini cloud AI integration
+- AI Showdown: same question, different approaches compared
+- Interactive chat function with Ollama > Gemini fallback
+- Prompt Engineering Playground (3 experiments)
 
-By the end of this workshop, participants will:
+**03 - Generative AI in Kiswahili**
+- Entirely in Kiswahili language
+- `KISWAHILI_SYSTEM` prompt forces Kiswahili responses
+- `pata_takwimu()` — dataset statistics with Kiswahili variable names
+- `jibu_kutoka_data(swali)` — keyword-based Kiswahili data answers
+- `zungumza(swali)` — unified chat (Data > Ollama > Gemini > Akiba fallback)
+- Prompt engineering experiments in Kiswahili
 
-- **Understand** the fundamental differences between Predictive and Generative AI
-- **Experience** the traditional ML pipeline: Load → Clean → Train → Predict
-- **Master** basic prompt engineering techniques
-- **Compare** cloud-based vs local AI deployment options
-- **Apply** appropriate AI approaches to hackathon projects
+### Presentation (22 Slides)
+Built with LaTeX Beamer. Covers:
+- Opening & AI landscape (2 slides)
+- Two Worlds of AI comparison (2 slides)
+- Generative AI concepts (3 slides)
+- Kiswahili AI motivation (2 slides)
+- Decision framework for choosing AI approaches (3 slides)
+- Live demo transitions and closing (remaining slides)
 
-## 🔧 Technical Requirements
+Compile with: `xelatex presentation.tex` (requires `fontspec` package)
 
-### Prerequisites:
-- **Python 3.8+** (for local development)
-- **Web browser** with internet connection
-- **Google account** (for Colab access)
-- **Basic Python familiarity** (helpful but not required)
+## Hackfest Machakos 2025 (60 min)
 
-### Required Packages:
-Install all dependencies with:
+The original compact 60-minute version of this workshop. The UbuCon-2026 notebooks are the expanded and polished successors. See the [Presenter Notes](Workshop_Presenter_Notes.md) for the 60-minute compressed timeline.
+
+## Quick Start
+
+### Prerequisites
+- Python 3.8+
+- Web browser with internet connection
+- Google account (for Colab)
+
+### Installation
 ```bash
+git clone https://github.com/Kevinobote/From-Predictive-to-Generative-AI.git
+cd From-Predictive-to-Generative-AI
 pip install -r requirements.txt
 ```
 
-**Core Libraries:**
-- `pandas>=2.0.0` - Data manipulation
-- `numpy>=1.24.0` - Numerical operations
-- `scikit-learn>=1.3.0` - Machine learning
-- `matplotlib>=3.7.0` - Plotting
-- `seaborn>=0.12.0` - Statistical visualization
-- `google-generativeai>=0.8.0` - Gemini AI integration
-- `requests>=2.31.0` - HTTP requests for Ollama
+### API Setup
 
-### Optional Enhancements:
-- **Gemini API key** (free from [Google AI Studio](https://makersuite.google.com/))
-- **Local Ollama installation** for privacy-focused AI ([ollama.ai](https://ollama.ai))
+**Ollama (Local AI — recommended for UbuCon):**
+```bash
+# Install from https://ollama.ai
+ollama pull llama3
+ollama serve
+```
 
-## 📖 Workshop Structure
+**Gemini (Cloud AI — optional):**
+1. Get free API key from [Google AI Studio](https://makersuite.google.com/)
+2. Replace `YOUR_API_KEY_HERE` in notebooks
+3. Never commit API keys to version control
 
-### Phase 1: The "Predict" World (0-10 min)
-- Traditional ML demonstration with Titanic dataset
-- Four-step pipeline: Load → Clean → Train → Predict
-- Key limitation: Can only output known categories
-
-### Phase 2: The "Generate" World (10-25 min)
-- Introduction to Large Language Models
-- Prompt engineering as the new programming paradigm
-- Cloud vs local AI deployment strategies
-
-### Phase 3: Hands-On Showdown (25-45 min)
-- Live coding with Gemini and Ollama
-- Student experimentation with prompt modifications
-- Results sharing and discussion
-
-### Phase 4: Hackfest Strategy (45-60 min)
-- Choosing the right AI approach for projects
-- Ethical considerations and responsible AI use
-- Practical next steps and resources
-
-## 🎯 Key Concepts Covered
-
-### Traditional ML Concepts:
-- Supervised learning and classification
-- Data preprocessing and feature engineering
-- Model training and evaluation
-- Prediction accuracy and limitations
-
-### Generative AI Concepts:
-- Large Language Models (LLMs)
-- Prompt engineering techniques
-- Role-based AI interactions
-- Multimodal AI capabilities
-
-### Practical Skills:
-- Google Colab usage
-- API integration (Gemini)
-- Local AI setup (Ollama)
-- Prompt optimization strategies
-
-## 🛠️ Setup Instructions
-
-### Option 1: Google Colab (Recommended)
+### Running in Google Colab
 1. Go to [colab.research.google.com](https://colab.research.google.com)
-2. Upload the `.ipynb` files or open from GitHub
-3. Run cells sequentially - packages install automatically
-4. Add Gemini API key when prompted
+2. Upload `.ipynb` files or open from GitHub
+3. Run cells sequentially — packages install automatically
 
-### Option 2: Local Development
-1. **Clone/Download** this repository
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Start Jupyter**:
-   ```bash
-   jupyter notebook
-   ```
-4. **Open notebooks** and run cells sequentially
+## Learning Objectives
 
-### API Setup (Optional but Recommended)
+By the end of this workshop, participants will:
+- Understand the fundamental differences between Predictive and Generative AI
+- Experience the traditional ML pipeline: Load > Clean > Train > Predict
+- Master basic prompt engineering techniques
+- Compare cloud-based (Gemini) vs local (Ollama) AI deployment
+- Experience AI in African languages (Kiswahili)
+- Apply appropriate AI approaches to real projects
 
-#### Gemini API (Cloud AI):
-1. Visit [Google AI Studio](https://makersuite.google.com/)
-2. Create free account and generate API key
-3. In notebook, replace `YOUR_API_KEY_HERE` with your key
-4. **Security**: Never commit API keys to version control!
+## Key Concepts
 
-#### Ollama (Local AI):
-1. Install from [ollama.ai](https://ollama.ai)
-2. Download model: `ollama pull llama3`
-3. Start server: `ollama serve`
-4. Notebook will auto-detect local server
+| Predictive AI | Generative AI |
+|---------------|---------------|
+| Supervised learning & classification | Large Language Models (LLMs) |
+| Data preprocessing & feature engineering | Prompt engineering |
+| Model training & evaluation | Role-based AI interactions |
+| Outputs known categories only | Creates new, original content |
+| Requires structured data | Works with natural language |
 
-## 🎨 Customization Options
+## Tech Stack
 
-### Adapt for Different Audiences:
-- **Beginner Coders**: Focus more on concepts and analogies
-- **Advanced Developers**: Add technical deep-dives and optimization
-- **Non-Technical**: Emphasize practical applications and prompt engineering
+- **ML**: pandas, numpy, scikit-learn, matplotlib, seaborn
+- **Generative AI**: Ollama (llama3), Google Gemini (gemini-2.0-flash)
+- **Presentation**: LaTeX Beamer (xelatex)
+- **Platform**: Google Colab, Jupyter Notebook
 
-### Extend the Workshop:
-- Add computer vision examples with Gemini's multimodal capabilities
-- Include fine-tuning demonstrations
-- Explore different AI model comparisons
-- Add ethical AI discussion sessions
+## Troubleshooting
 
-## 📊 Assessment & Outcomes
+| Issue | Solution |
+|-------|----------|
+| Package errors | `pip install -r requirements.txt` |
+| Colab crashes | Restart runtime, run cells again |
+| API key errors | Verify key is correct and has quota |
+| Ollama connection fails | Expected in Colab (local only) — install Ollama on your machine |
+| Slow responses | Try simpler prompts or smaller models |
+| LaTeX won't compile | Use `xelatex` not `pdflatex` (requires fontspec) |
 
-### Immediate Success Indicators:
-- Students can explain Predictive vs Generative AI differences
-- 50%+ successfully run at least one notebook
-- Active participation in prompt engineering exercises
-- Questions about practical applications
+## Resources
 
-### Hackathon Impact Metrics:
-- Teams incorporate AI thoughtfully into projects
-- Evidence of prompt engineering in presentations
-- Appropriate AI approach selection for problems
-- Responsible AI usage considerations
+**AI APIs**: [Google AI Studio](https://makersuite.google.com/) | [Hugging Face](https://huggingface.co/) | [OpenAI](https://platform.openai.com/)
+**Local AI**: [Ollama](https://ollama.ai/) | [LM Studio](https://lmstudio.ai/) | [GPT4All](https://gpt4all.io/)
+**Learning**: [Prompt Engineering Guide](https://www.promptingguide.ai/) | [Fast.ai](https://course.fast.ai/) | [Coursera AI for Everyone](https://www.coursera.org/learn/ai-for-everyone)
 
-## 🔗 Additional Resources
+## Contributing
 
-### Free AI APIs:
-- [Google AI Studio](https://makersuite.google.com/) - Gemini API
-- [OpenAI Platform](https://platform.openai.com/) - GPT models
-- [Hugging Face](https://huggingface.co/) - Open source models
-
-### Local AI Tools:
-- [Ollama](https://ollama.ai/) - Local LLM runner
-- [LM Studio](https://lmstudio.ai/) - GUI for local models
-- [GPT4All](https://gpt4all.io/) - Privacy-focused AI
-
-### Learning Materials:
-- [Prompt Engineering Guide](https://www.promptingguide.ai/)
-- [Fast.ai Practical Deep Learning](https://course.fast.ai/)
-- [Coursera AI for Everyone](https://www.coursera.org/learn/ai-for-everyone)
-
-## 🤝 Contributing
-
-This workshop is designed to be adapted and improved. Feel free to:
-- Modify notebooks for your specific audience
-- Add new examples and use cases
-- Translate materials to other languages
+This workshop is designed to be adapted. Feel free to:
+- Modify notebooks for your audience
+- Add new language versions (like the Kiswahili notebook)
+- Translate materials
 - Share improvements and feedback
 
-## 📄 License
+## License
 
-These materials are provided for educational use. Please respect API terms of service and model usage policies when using external AI services.
+Educational use. Please respect API terms of service and model usage policies.
 
-## 🎓 Workshop Learning Path
+---
 
-### Phase 1: Traditional ML (0-15 min)
-- Load and explore Titanic dataset
-- Build Logistic Regression model
-- Understand limitations: only predicts 0/1
-
-### Phase 2: Generative AI (15-45 min)
-- Compare AI approaches: Gemini vs Ollama vs Rules
-- Learn prompt engineering techniques
-- Experience natural language predictions
-
-### Phase 3: Interactive AI Chat (45-60 min)
-- Ask AI questions about the data
-- Get insights and explanations
-- Understand AI as analysis partner
-
-## 🆘 Troubleshooting
-
-### Common Issues:
-- **Package errors**: Run `pip install -r requirements.txt`
-- **Colab crashes**: Restart runtime and run cells again
-- **API key errors**: Verify key is correct and has quota
-- **Ollama connection fails**: Expected in Colab (local only)
-- **Slow responses**: Try simpler prompts or different models
-
-### Getting Help:
-- Check notebook comments for detailed explanations
-- Review `Workshop_Presenter_Notes.md` for context
-- Test in fresh environment before presenting
-
-## 📊 Success Metrics
-
-### Immediate Indicators:
-- Students explain Predictive vs Generative AI differences
-- 70%+ successfully run at least one notebook
-- Active participation in chat experiments
-- Questions about practical applications
-
-### Hackathon Impact:
-- Teams incorporate AI thoughtfully into projects
-- Evidence of prompt engineering in presentations
-- Appropriate AI approach selection for problems
-
-## 🤝 Contributing & Feedback
-
-This workshop is designed to be adapted and improved:
-- Modify notebooks for your specific audience
-- Add new examples and use cases
-- Translate materials to other languages
-- Share improvements and feedback
-
-## 📄 License
-
-These materials are provided for educational use. Please respect API terms of service and model usage policies.
-
-**Ready to explore the future of AI? Let's dive in! 🚀**
-
-*Last updated: 21st, October 2025*
+*Last updated: June 2025*

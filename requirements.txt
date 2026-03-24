@@ -1,17 +1,18 @@
-# Workshop Requirements: From Predictive to Generative AI
+# From Predictive to Generative AI: Workshop Dependencies
+# UbuCon Africa 2026 & Hackfest Machakos 2025
 # Install with: pip install -r requirements.txt
 
-# Core Data Science Libraries
+# Core Data Science
 pandas>=2.0.0
 numpy>=1.24.0
 scikit-learn>=1.3.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
-# Generative AI Libraries
+# Generative AI
 google-generativeai>=0.8.0
 requests>=2.31.0
 
-# Optional: For enhanced notebook experience
+# Notebook Experience
 jupyter>=1.0.0
 ipywidgets>=8.0.0
