@@ -4,10 +4,7 @@
 
 A hands-on workshop demonstrating the paradigm shift from traditional Predictive AI to modern Generative AI through live coding, prompt engineering, and multilingual AI experiences.
 
-**Presented at:**
-- **UbuCon Africa 2026** (1 hr 45 min) - Expanded version with Kiswahili AI, Beamer presentation, and 3 notebooks
-- **Hackfest Machakos 2025** (60 min) - Original compact version with 2 notebooks
-
+**Presented at**: UbuCon Africa 2026 (1 hr 45 min)
 **Technical Level**: Intermediate (mixed coding experience welcome)
 **Platform**: Google Colab, VS Code, or local Jupyter
 
@@ -22,16 +19,16 @@ A hands-on workshop demonstrating the paradigm shift from traditional Predictive
 │   ├── presentation.tex                              #   Beamer slides (22 slides)
 │   ├── presentation.pdf                              #   Compiled presentation
 │   └── .gitignore                                    #   LaTeX auxiliary exclusions
-├── Workshop_Presenter_Notes.md                       # Presenter guide (105-min & 60-min formats)
+├── Workshop_Presenter_Notes.md                       # Presenter guide
 ├── requirements.txt                                  # Python dependencies
 └── README.md                                         # This file
 ```
 
-## UbuCon 2026 Workshop (1 hr 45 min)
+## Workshop Structure
 
-### What's New
-- **3 notebooks** instead of 2 — added Kiswahili AI notebook
-- **Beamer presentation** (22 slides) for structured delivery
+### Highlights
+- **3 hands-on notebooks** — Predictive AI, Generative AI, and Kiswahili AI
+- **22-slide Beamer presentation** for structured delivery
 - **Ollama-first approach** — local AI as primary, Gemini as secondary
 - **Multilingual AI** — full Kiswahili language experience
 - **Extended hands-on time** — 45 minutes of participant experimentation
@@ -83,10 +80,6 @@ Built with LaTeX Beamer. Covers:
 
 Compile with: `xelatex presentation.tex` (requires `fontspec` package)
 
-## Hackfest Machakos 2025 (60 min)
-
-The original compact 60-minute version of this workshop. The UbuCon-2026 notebooks are the expanded and polished successors. See the [Presenter Notes](Workshop_Presenter_Notes.md) for the 60-minute compressed timeline.
-
 ## Quick Start
 
 ### Prerequisites
@@ -103,7 +96,7 @@ pip install -r requirements.txt
 
 ### API Setup
 
-**Ollama (Local AI — recommended for UbuCon):**
+**Ollama (Local AI — recommended):**
 ```bash
 # Install from https://ollama.ai
 ollama pull llama3
