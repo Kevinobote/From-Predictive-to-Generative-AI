@@ -99,7 +99,7 @@ pip install -r requirements.txt
 **Ollama (Local AI — recommended):**
 ```bash
 # Install from https://ollama.ai
-ollama pull llama3
+ollama pull llama3.2:3b
 ollama serve
 ```
 
