@@ -171,4 +171,4 @@ Educational use. Please respect API terms of service and model usage policies.
 
 ---
 
-*Last updated: June 2025*
+*Last updated: March 2026*
